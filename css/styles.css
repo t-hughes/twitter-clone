@@ -129,7 +129,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
-			display: none;
+			/*display: none;*/
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -167,9 +167,12 @@ body {
 		margin: 10px 0;
 		padding-left: 42px;
 	}
-
+	.tweet:hover .tweet-actions {
+		visibility: visible;
+	}
 	.tweet-actions {
 		text-align: right;
+		visibility: hidden;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -260,4 +263,3 @@ body {
 				top: 0;
 				left: 0;
 			}
-			

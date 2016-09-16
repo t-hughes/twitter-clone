@@ -14,7 +14,8 @@
             <div id="profile-summary">
                 <div class="content">
                     <img class='avatar' src='img/memyself.png' />
-                    <p>Talon Hughes</p>
+                    <p class"fullname">Talon Hughes</p>
+                    <p class="username">@thughes</p>
                 </div>
             </div>
             <div id="tweet-content">
@@ -32,9 +33,6 @@
         <div id="main">
             <h2>Tweets</h2>
             <div id="stream">
-
-                <!-- STEP 5: When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
-                <!-- HINT: jQuery ".prepend" method -->
                 <div class="tweet">
                     <div class="content">
                         <img class="avatar" src="img/dogecream.jpg" />
@@ -44,9 +42,6 @@
                         <!-- BLACK DIAMOND: Implement the icons for when a tweet is favorited/retweeted in the upper right of the tweet. -->
                         <!-- HINT: Add to what you created in Step 5 -->
                         <p class="tweet-text">Today is an amazing day.</p>
-
-                        <!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
-                        <!-- HINT: CSS ":hover" pseudo element -->
                         <div class="tweet-actions">
                             <ul>
                                 <li><span class="icon action-reply"></span> Reply</li>
@@ -55,9 +50,9 @@
                                 <li><span class="icon action-more"></span> More</li>
                             </ul>
                         </div>
-
                         <!-- STEP 7: The Retweets/timestamp/Reply areas below should also be hidden by default. These should only expand if you click on the tweet. Use a jQuery animation to accomplish the reveal, similar to how it’s done on Twitter.com -->
-                        <!-- HINT: jQuery ".on" eventHandler -->
+                  	<!-- HINT: jQuery ".on" eventHandler -->
+
                         <div class="stats">
                             <div class="retweets">
                                 <p class="num-retweets">30</p>
