@@ -129,6 +129,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			display: none;
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -138,6 +139,7 @@ body {
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
 			}
+
 
 /* TWEET */
 .tweet {
@@ -258,5 +260,4 @@ body {
 				top: 0;
 				left: 0;
 			}
-
-
+			
