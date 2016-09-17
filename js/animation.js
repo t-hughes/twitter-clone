@@ -91,8 +91,8 @@ $(document).ready(function() {
         $('.reply').hide();
         //Reveals Retweets, Favorites, and Time Stamp
         $('.tweet').on('click', function() {
-            $(this).find('.stats').toggle('fast', 'linear');
-            $(this).find('.reply').toggle('fast', 'linear');
+            $(this).find('.stats').show();
+            $(this).find('.reply').show();
         });
 
     });
