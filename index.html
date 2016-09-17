@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
 </head>
 
 <body>
@@ -13,9 +14,9 @@
         <div id="dashboard">
             <div id="profile-summary">
                 <div class="content">
-                    <img class='avatar' src='img/memyself.png' />
-                    <p class"fullname">Talon Hughes</p>
-                    <p class="username">@thughes</p>
+                    <img class='avatar' src='img/memyself.png' data-toggle='tooltip' title='Me' />
+                    <p id="user-name">Talon Hughes</p>
+                    <p id="handle"> @thughes</p>
                 </div>
             </div>
             <div id="tweet-content">
@@ -35,7 +36,7 @@
             <div id="stream">
                 <div class="tweet">
                     <div class="content">
-                        <img class="avatar" src="img/dogecream.jpg" />
+                        <img class="avatar" src="img/dogecream.jpg" data-toggle='tooltip' title='My BFF'/>
                         <strong class="fullname">dogecream</strong>
                         <span class="username">@dogecream</span>
 
@@ -50,7 +51,7 @@
                                 <li><span class="icon action-more"></span> More</li>
                             </ul>
                         </div>
-                        <div class="stats">
+                        <div class="stats toggle">
                             <div class="retweets">
                                 <p class="num-retweets">30</p>
                                 <p>RETWEETS</p>
@@ -61,22 +62,16 @@
                             </div>
                             <div class="users-interact">
                                 <div>
-
-                                    <!-- BLACK DIAMOND: Implement the Bootstrap tooltips for when you hover over a user’s avatar image -->
-                                    <!-- HINT: Bootstrap has good documentation =) -->
-                                    <img src="img/memyself.png" />
-                                    <img src="img/vklimenko.jpg" />
+                                    <img src="img/memyself.png" data-toggle='tooltip' title='Me'/>
+                                    <img src="img/vklimenko.jpg" data-toggle='tooltip' title='vkl'/>
                                 </div>
                             </div>
+                            <div class="time">1:04 PM - 19 Sep 13
 
-                            <!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
-                            <!-- HINT: Refer to timeago documentation -->
-                            <div class="time">
-                                1:04 PM - 19 Sep 13
                             </div>
                         </div>
-                        <div class="reply">
-                            <img class="avatar" src="img/memyself.png" />
+                        <div class="reply toggle">
+                            <img class="avatar" src="img/memyself.png" data-toggle='tooltip' title='Me'/>
                             <textarea class="tweet-compose" placeholder="Reply to @dogecream" /></textarea>
                         </div>
                     </div>
@@ -85,7 +80,7 @@
 
                 <div class="tweet">
                     <div class="content">
-                        <img class="avatar" src="img/funwatercat.jpg" />
+                        <img class="avatar" src="img/funwatercat.jpg" data-toggle='tooltip' title='Onion'/>
                         <strong class="fullname">The Onion</strong>
                         <span class="username">@theonion</span>
                         <p class="tweet-text">“I'm able to speak confidently about a wide range of subjects, so it’s probably hard for most women to follow.” http://onion.com/1aWfKwf </p>
@@ -97,7 +92,7 @@
                                 <li><span class="icon action-more"></span> More</li>
                             </ul>
                         </div>
-                        <div class="stats">
+                        <div class="stats toggle">
                             <div class="retweets">
                                 <p class="num-retweets">30</p>
                                 <p>RETWEETS</p>
@@ -108,16 +103,17 @@
                             </div>
                             <div class="users-interact">
                                 <div>
-                                    <img src="img/jennyshen.jpg" />
-                                    <img src="img/dogecream.jpg" />
+                                    <img src="img/jennyshen.jpg" data-toggle='tooltip' title='Harvard Biz'/>
+                                    <img src="img/dogecream.jpg" data-toggle='tooltip' title='My BFF' />
                                 </div>
                             </div>
                             <div class="time">
-                                1:04 PM - 19 Sep 13
+                              1:04 PM - 19 Sep 13
+
                             </div>
                         </div>
-                        <div class="reply">
-                            <img class="avatar" src="img/memyself.png" />
+                        <div class="reply toggle">
+                            <img class="avatar" src="img/memyself.png" data-toggle='tooltip' title='Me'/>
                             <textarea class="tweet-compose" placeholder="Reply to @dogecream" /></textarea>
                         </div>
                     </div>
@@ -126,7 +122,7 @@
 
                 <div class="tweet">
                     <div class="content">
-                        <img class="avatar" src="img/jennyshen.jpg" />
+                        <img class="avatar" src="img/jennyshen.jpg" data-toggle='tooltip' title='Harvard Biz' />
                         <strong class="fullname">Harvard Biz Review</strong>
                         <span class="username">@HarvardBiz</span>
                         <p class="tweet-text">It is possible to work with a loved one without ruining the relationship http://s.hbr.org/15FDIri </p>
@@ -138,7 +134,7 @@
                                 <li><span class="icon action-more"></span> More</li>
                             </ul>
                         </div>
-                        <div class="stats">
+                        <div class="stats toggle">
                             <div class="retweets">
                                 <p class="num-retweets">30</p>
                                 <p>RETWEETS</p>
@@ -149,16 +145,16 @@
                             </div>
                             <div class="users-interact">
                                 <div>
-                                    <img src="img/vklimenko.jpg" />
-                                    <img src="img/funwatercat.jpg" />
+                                    <img src="img/vklimenko.jpg" data-toggle='tooltip' title='vkl'/>
+                                    <img src="img/funwatercat.jpg" data-toggle='tooltip' title='Onion'/>
                                 </div>
                             </div>
                             <div class="time">
                                 1:04 PM - 19 Sep 13
                             </div>
                         </div>
-                        <div class="reply">
-                            <img class="avatar" src="img/memyself.png" />
+                        <div class="reply toggle">
+                            <img class="avatar" src="img/memyself.png" data-toggle='tooltip' title='Me'/>
                             <textarea class="tweet-compose" placeholder="Reply to @dogecream" /></textarea>
                         </div>
                     </div>
@@ -170,7 +166,12 @@
         <!-- #main -->
     </div>
     <!-- #page-container -->
+
+
     <script src="./js/jquery-2.0.3.min.js"></script>
+    <!-- <script src="js/timeago.js"></script>  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.3/jquery.timeago.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="./js/animation.js"></script>
 </body>
 
